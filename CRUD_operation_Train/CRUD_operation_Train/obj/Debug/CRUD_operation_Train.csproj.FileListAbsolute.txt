@@ -1,0 +1,10 @@
+D:\New folder (3)\CRUD_operation_Train\CRUD_operation_Train\obj\Debug\CRUD_operation_Train.csprojAssemblyReference.cache
+D:\New folder (3)\CRUD_operation_Train\CRUD_operation_Train\obj\Debug\CRUD_operation_Train.Form1.resources
+D:\New folder (3)\CRUD_operation_Train\CRUD_operation_Train\obj\Debug\CRUD_operation_Train.Properties.Resources.resources
+D:\New folder (3)\CRUD_operation_Train\CRUD_operation_Train\obj\Debug\CRUD_operation_Train.csproj.GenerateResource.cache
+D:\New folder (3)\CRUD_operation_Train\CRUD_operation_Train\obj\Debug\CRUD_operation_Train.csproj.CoreCompileInputs.cache
+D:\New folder (3)\CRUD_operation_Train\CRUD_operation_Train\bin\Debug\CRUD_operation_Train.exe.config
+D:\New folder (3)\CRUD_operation_Train\CRUD_operation_Train\bin\Debug\CRUD_operation_Train.exe
+D:\New folder (3)\CRUD_operation_Train\CRUD_operation_Train\bin\Debug\CRUD_operation_Train.pdb
+D:\New folder (3)\CRUD_operation_Train\CRUD_operation_Train\obj\Debug\CRUD_operation_Train.exe
+D:\New folder (3)\CRUD_operation_Train\CRUD_operation_Train\obj\Debug\CRUD_operation_Train.pdb
