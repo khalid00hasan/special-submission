@@ -32,7 +32,7 @@ namespace CRUD_operation_Train
             this.button1 = new System.Windows.Forms.Button();
             this.txttraId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.TrainInfo = new System.Windows.Forms.DataGridView();
+            this.TrainInfogv = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -44,7 +44,7 @@ namespace CRUD_operation_Train
             this.txtstart = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.TrainInfo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TrainInfogv)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -76,13 +76,15 @@ namespace CRUD_operation_Train
             this.label1.TabIndex = 2;
             this.label1.Text = "Train id";
             // 
-            // TrainInfo
+            // TrainInfogv
             // 
-            this.TrainInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TrainInfo.Location = new System.Drawing.Point(8, 255);
-            this.TrainInfo.Name = "TrainInfo";
-            this.TrainInfo.Size = new System.Drawing.Size(780, 183);
-            this.TrainInfo.TabIndex = 3;
+            this.TrainInfogv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TrainInfogv.Location = new System.Drawing.Point(8, 255);
+            this.TrainInfogv.Name = "TrainInfogv";
+            this.TrainInfogv.Size = new System.Drawing.Size(780, 183);
+            this.TrainInfogv.TabIndex = 3;
+            this.TrainInfogv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TrainInfo_CellClick);
+            this.TrainInfogv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TrainInfogv_CellContentClick);
             // 
             // button2
             // 
@@ -104,6 +106,7 @@ namespace CRUD_operation_Train
             this.button3.TabIndex = 5;
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -114,6 +117,7 @@ namespace CRUD_operation_Train
             this.button4.TabIndex = 6;
             this.button4.Text = "Update";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label2
             // 
@@ -203,13 +207,14 @@ namespace CRUD_operation_Train
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.TrainInfo);
+            this.Controls.Add(this.TrainInfogv);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txttraId);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Train info";
-            ((System.ComponentModel.ISupportInitialize)(this.TrainInfo)).EndInit();
+            this.Load += new System.EventHandler(this.Form1_Load_1);
+            ((System.ComponentModel.ISupportInitialize)(this.TrainInfogv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -220,7 +225,7 @@ namespace CRUD_operation_Train
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txttraId;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView TrainInfo;
+        private System.Windows.Forms.DataGridView TrainInfogv;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
